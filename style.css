@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+#container {
+    font-family: 'Montserrat', sans-serif;    height: 100%;
+    background-color: hsl(231, 23%, 16%);
+    display: grid;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 40px auto 30px;
+    grid-template-areas: 
+        "h h h h h h h h" 
+        "l l l l r r r r" 
+        "f f f f f f f f";
+}
+
+#header {
+    background-color:#1F2232;
+    color: #FDE8E9;
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#header-left {
+    font-family: 'Sigmar One', cursive;
+    font-weight: lighter;
+    font-size: 140%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+#header-right {
+    font-weight: lighter;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+#log-container {
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    list-style: none;
+    font-weight: lighter;
+}
+
+#signin {
+    margin: 10px;
+}
+
+#signup {
+    margin: 10px;
+}
+
+#content-left {
+    background-color:#FDE8E9;
+    color:#1F2232;
+    font-size: 150%;
+    font-weight: lighter;
+    grid-area: l;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-right {
+    grid-area: r;
+    background-color:#FDE8E9;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dog-img {
+    width: 100%;
+}
+
+#footer {
+    background-color: #596475;
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h1 {
+    color: #FDE8E9;
+    font-size: 100%;
+    font-weight: lighter;
+}
+
+.link:link {
+    text-decoration: none;
+    color: #FDE8E9;
+}
+
+.link:visited {
+    text-decoration: none;
+    color: #FDE8E9;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #FDE8E9;
+}
+
+.link:active {
+    text-decoration: none;
+    color: #FDE8E9;
+}
